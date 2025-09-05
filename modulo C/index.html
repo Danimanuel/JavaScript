@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: #a56565;
+            color: rgb(255, 255, 67);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Apreendendo o DOM</h1>
+    <p>dando os primeiros passos em <strong>DOM</strong>com o<strong> Curso emvideo</strong></p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere officia autem sed similique voluptates, dignissimos ut voluptatum quibusdam iste aut non! Facilis laboriosam obcaecati voluptates blanditiis hic odit culpa iusto.</p>
+    <script>
+       var p = document.getElementsByTagName('p')[0]
+       var body = document.getElementsByTagName('body')[0]
+       var h1 = document.getElementsByTagName('h1')[0]
+       h1.style.fontSize = '3em'
+        p.style.color =  'red'
+        body.style.background = 'lightgray'
+    </script>
+</body>
+</html>
