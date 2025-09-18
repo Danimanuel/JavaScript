@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar</title>
+</head>
+<body>
+    <h1>Identificardor</h1>
+    digite o seu pais: <input type="text" name="paisy" id="paisx">
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var paisid = document.getElementById('paisx')
+            var pais = paisid.value
+            var res = document.getElementById('res')
+
+            res.innerHTML = ` Tu és de ${pais}`
+
+            if(pais == 'Angola'){
+                res.innerHTML += `<p>tu és Angolano</p>`
+            }else {
+                res.innerHTML += `<p>tu és  Estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>

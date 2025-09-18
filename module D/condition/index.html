@@ -6,6 +6,26 @@
     <title>Module D</title>
 </head>
 <body>
-    
+    <h1>sistemas de Multas</h1>
+velocidade do carro: <input type="number"  name="text" id="textcar"> <input type="button" value="Verificar" onclick="calcular()">
+
+<div id="res">
+
+</div>
+<script>
+    function calcular() {
+        var textdrive = document.getElementById('textcar')
+
+        var resol = document.getElementById('res')
+        var vel = Number(textdrive.value)
+        res.innerHTML = `<p> Sua velocidade é de <strong> ${vel}Km/h </strong></p>`
+
+        if( vel > 60){
+            res.innerHTML += `<p> Voçê atingiu o limite de velocidade. <strong> MULTADO </strong> </p>`
+        } else {
+            res.innerHTML += `<p> Dirija com segurança e utilize o cinto de segurança</p>`
+        }
+    }
+</script>
 </body>
 </html>
